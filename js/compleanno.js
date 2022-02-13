@@ -12,5 +12,3 @@ function cercaFunction(){
 function nonCliccareFunction(){
     alert("scemo")
 }
-
-//commento
