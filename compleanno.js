@@ -1,14 +1,25 @@
 
-var cerca = document.getElementById("cerca");
 var non_cliccare = document.getElementById("non_cliccare");
 
-cerca.addEventListener("click", cercaFunction);
 non_cliccare.addEventListener("click", nonCliccareFunction);
 
-function cercaFunction(){
-    alert("ancora non l'ho imparato questo")
+function nonCliccareFunction(){
+    alert("scemo");
 }
 
-function nonCliccareFunction(){
-    alert("scemo")
-}
+
+const element = document.getElementById("eta");
+
+element.addEventListener("change", (e) => {
+    const value = e.target.value;
+    const text = element.options[element.selectedIndex].text;
+   
+    if (value == "bambini") {
+        document.getElementById("pick").textContent = `Ciao Elena!`;
+    } else if(value){
+        document.getElementById("pick").textContent = `Te hai: ${value} anni`;
+    }
+     else {
+      document.getElementById("pick").textContent = "";
+    }
+  });

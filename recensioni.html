@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vieport" content="width=device.width, initial-scale=1.0">
+    <title>Recensioni</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+
+      <div class="topnav">
+        <a href="#home">Casa</a>
+        <a href="#news">Qualcosa</a>
+        <a class="active" href="#contact">Recensioni</a>
+        <a href="#about", class="align-right">Qualcosa 2</a>
+      </div>
+
+</header>
+<main>
+    
+    <div class="jumbotron p-4">
+        <h1>Recensioni dal pubblico</h1>
+        <p>Qua sotto potrai scrivere icche ne pensi della pagina.</p>
+            <p>Non ci hanno ancora insegnato come gestire i server ed un registro SQL, quindi la recensione verrà sia salvata sul vostro dispositivo (cache, la usano tutti i siti) ed al contempo arriverà via email a me, che provvederò ad inserire a mano</p>
+        <hr/>
+    </div>
+      
+    <p>Cominciamo: come ti chiami?</p>
+
+    <p>Età?</p>
+    <div class="form-group ps-5 pe-5 ms-5 me-5">
+      <label for="age_select_box" class="form-label mt-4">Seleziona</label>
+    <select name="eta" id="eta" class="form-select">
+        <option value="">--Seleziona--</option>
+        <option value="bambini">Opzione bambini</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="anziani">Opzione anziani</option>
+      </select>
+      <p id="pick"></p>
+  </div>
+  
+
+    <p>Cani o gatti?</p>
+
+
+</main>
+
+<footer class="pt-3 mt-5 pb-5">
+    <h3>Iscriviti alla newsletter</h3>
+    <form class="form-inline ms-5 me-5">
+      <label class="sr-only" for="inlineFormInputName2">Nome</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Inserisci i tu nome">
+    
+      <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Quella vera">
+      </div>
+    
+      <div class="form-check mb-2 mr-sm-2">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+      </div>
+    
+      <button type="submit" class="btn btn-primary mb-2 ps-5 pe-5">Mandami un botto di spam</button>
+    </form>
+    
+    <a href="#!" class="btn btn-primary" id="non_cliccare">Non cliccarmi</a>
+  </footer>
+  <script src="compleanno.js"></script>
+</body>
+</html>
