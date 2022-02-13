@@ -27,11 +27,25 @@
             <p>Non ci hanno ancora insegnato come gestire i server ed un registro SQL, quindi la recensione verrà sia salvata sul vostro dispositivo (cache, la usano tutti i siti) ed al contempo arriverà via email a me, che provvederò ad inserire a mano</p>
         <hr/>
     </div>
-      
-    <p>Cominciamo: come ti chiami?</p>
+    
 
-    <p>Età?</p>
-    <div class="form-group ps-5 pe-5 ms-5 me-5">
+
+    <div class="container">
+      <div class="form-group pb-5 ps-3 pe-3" id="emailpass">
+    <div>
+      <label for="email" class="form-label mt-4">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div>
+      <label for="email" class="form-label mt-4">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <button type="button" class="mt-3">Invia</button>
+      <p id="email_input"></p>
+    </div>
+    </div>
+
+    <div class="form-group pb-5 mt-5 mb-5">
+      <p>Età?</p>
       <label for="age_select_box" class="form-label mt-4">Seleziona</label>
     <select name="eta" id="eta" class="form-select">
         <option value="">--Seleziona--</option>
@@ -45,10 +59,36 @@
       <p id="pick"></p>
   </div>
   
+    <div class="container pb-5">
+      <fieldset class="form-group">
+        <p>Cani o gatti?</p>
+        <legend></legend>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+            Cani
+          </label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+            Gatti
+          </label>
+        </div>
+      </div>
 
-    <p>Cani o gatti?</p>
+    <fieldset class="form-group pt-1 ps-5 pe-5" id="range">
+      <legend></legend>
+      <p>Lascia una valutazione generale sul sito:</p>
+        <label for="Grafica e design" class="form-label">Grafica e design</label>
+        <input type="range" class="form-range" id="grafica_design">
+        <label for="prestazioni" class="form-label">Prestazioni (velocità adattabilità)</label>
+        <input type="range" class="form-range" id="prestazioni">
+        <label for="Simpatia" class="form-label">Simpatia</label>
+        <input type="range" class="form-range" id="Simpatia">
+
+    </fieldset>
+
     <h3 id="riassunto">Riassunto: </h3>
-
+  </div>
 
 </main>
 

@@ -19,6 +19,24 @@ p{
     
 }
 
+#range{
+    font-size: 3rem;
+}
+
+.form-group{
+    border: 2px solid white;
+    padding: 2;
+    border-radius: 30px;
+}
+
+.form-check-label{
+    font-size: 2rem;
+}
+
+.form-label{
+    font-size: 3rem;
+}
+
 li{
     font-size: 2.75rem;
     text-align: left;
