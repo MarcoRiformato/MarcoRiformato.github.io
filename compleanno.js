@@ -17,9 +17,13 @@ element.addEventListener("change", (e) => {
     if (value == "bambini") {
         document.getElementById("pick").textContent = `Ciao Elena!`;
     } else if(value){
-        document.getElementById("pick").textContent = `Te hai: ${value} anni`;
+        document.getElementById("pick").textContent = `Te hai ${value} anni`;
     }
      else {
       document.getElementById("pick").textContent = "";
     }
   });
+
+  function getValueFunction(){
+      document.getElementById("riassunto").innerHTML = "Prova";
+  }
