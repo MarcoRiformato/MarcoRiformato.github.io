@@ -1,5 +1,6 @@
 
 var non_cliccare = document.getElementById("non_cliccare");
+var cani_gatti = document.getElementById("cani_gatti");
 
 non_cliccare.addEventListener("click", nonCliccareFunction);
 
@@ -38,17 +39,6 @@ e_email.addEventListener("click", (e_email)  => {
     const email_text = element.options[e_email.selectedIndex].email_text;
 
     if (email_value == "nome") {
-        document.getElementById("email_input").textContent = "Funziona";
-    } else {
-        alert("sono qui")
-    }
-})
-
-e_pass.addEventListener("change", (e_pass)  => {
-    const e_pass = pass.target.pass_value;
-    const pass_text = element.options[e_pass.selectedIndex].pass_text;
-
-    if (pass_value == "nome") {
         document.getElementById("email_input").textContent = "Funziona";
     } else {
         alert("sono qui")
