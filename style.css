@@ -25,16 +25,16 @@ p{
 
 .form-group{
     border: 2px solid white;
-    padding: 2;
+    padding: t-2 b-2;
     border-radius: 30px;
 }
 
 .form-check-label{
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .form-label{
-    font-size: 3rem;
+    font-size: 2.75rem;
 }
 
 li{

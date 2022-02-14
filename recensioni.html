@@ -1,121 +1,102 @@
-<!DOCTYPE html>
+h1{
+    font-size: 8rem;
+    color: var(--bs-body-color);
+}
 
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="vieport" content="width=device.width, initial-scale=1.0">
-    <title>Recensioni</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-</head>
-<body>
-<header>
+h2{
+    font-size: 5rem;
+    color: var(--bs-body-color);
+}
 
-      <div class="topnav">
-        <a href="index.html">Casa</a>
-        <a class="active" href="#contact">Invia recensione</a>
-        <a href="inviate.html", class="align-right">Recensioni inviate</a>
-        <a href="#news">Qualcosa</a>
-      </div>
+h3{
+    font-size: 3.5rem;
+    color: var(--bs-body-color);
+}
 
-</header>
-<main>
+p{
+    font-size: 2.5rem;
+    color: white;
     
-    <div class="jumbotron p-4">
-        <h1>Recensioni dal pubblico</h1>
-        <p>Qua sotto potrai scrivere icche ne pensi della pagina.</p>
-            <p>Non ci hanno ancora insegnato come gestire i server ed un registro SQL, quindi dopo aver compilato tutto mandatemi la schermata ed io le mostrerò nella sezione "Recensioni"</p>
-            <hr/>
-    </div>
-    
+}
 
+#range{
+    font-size: 3rem;
+}
 
-    <div class="container">
-      <div class="form-group pb-5 ps-3 pe-3" id="emailpass">
-    <div>
-      <label for="email" class="form-label mt-4">Nome</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    </div>
-    </div>
+.form-group{
+    border: 2px solid white;
+    padding: t-2 b-2;
+    border-radius: 30px;
+}
 
-    <div class="form-group pb-5 mt-5 mb-5 ps-3 pe-3">
-      <p>Età?</p>
-      <label for="age_select_box" class="form-label mt-4">Seleziona</label>
-    <select name="eta" id="eta" class="form-select">
-        <option value="">--Seleziona--</option>
-        <option value="bambini">Opzione bambini</option>
-        <option value="18">18</option>
-        <option value="19">19</option>
-        <option value="20">20</option>
-        <option value="21">21</option>
-        <option value="anziani">21+</option>
-      </select>
-      <p id="pick"></p>
-  </div>
+.form-check-label{
+    font-size: 4rem;
+}
+
+.form-label{
+    font-size: 2.75rem;
+}
+
+li{
+    font-size: 2.75rem;
+    text-align: left;
+}
+
+btn-lg{
+    padding: 7rem;
+    font-size: 10rem;
+    border-radius: 7rem;
+}
+
+#progress_bar{
+    padding: 3rem;
+    font-size: 6rem;
+    border-radius: 3rem;
+}
+
+body {
+    background-image: linear-gradient(#17082e 0,#1a0933 7%,#1a0933 80%,#0c1f4c 100%);
+    text-shadow: 0 0 1px rgb(50 251 226 / 30%), 0 0 2px rgb(50 251 226 / 30%), 0 0 5px rgb(50 251 226 / 20%);
+}
+
+body{
+    text-align: center;
+}
+
+footer{
+    background-color: #180830;
+}
+
+header{
+    background-color: #180830;
+}
+
+#main_navbar{
+    padding: 3.5rem;
+    font-size: 2.7rem;
+}
+
+/* top nav <----------------------------> */
+.topnav {
+    overflow: hidden;
+    background-color: #6F42C1;
+  }
   
-    <div class="container pb-5">
-      <fieldset class="form-group pb-3 pt-3" id="cani_gatti">
-        <p>Cani o gatti?</p>
-        <legend></legend>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            Cani
-          </label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            Gatti
-          </label>
-          <p class="pt-3" id="risposta_canigatti"></p>
-        </div>
-      </div>
-
-    <fieldset class="form-group pt-1 ps-5 pe-5" id="range">
-      <legend></legend>
-      <p>Lascia una valutazione generale sul sito:</p>
-        <label for="Grafica e design" class="form-label">Grafica e design</label>
-        <input type="range" class="form-range" id="grafica_design">
-        <label for="prestazioni" class="form-label">Prestazioni (velocità adattabilità)</label>
-        <input type="range" class="form-range" id="prestazioni">
-        <label for="Simpatia" class="form-label">Simpatia</label>
-        <input type="range" class="form-range" id="Simpatia">
-
-    </fieldset>
-  </div>
-
-</main>
-
-<footer class="pt-3 mt-5 pb-5">
-    <h3>Iscriviti alla newsletter</h3>
-    <form class="form-inline ms-5 me-5">
-      <label class="sr-only" for="inlineFormInputName2">Nome</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Inserisci i tu nome">
-    
-      <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
-      <div class="input-group mb-2 mr-sm-2">
-        <div class="input-group-prepend">
-          <div class="input-group-text">@</div>
-        </div>
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Quella vera">
-      </div>
-    
-      <div class="form-check mb-2 mr-sm-2">
-        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-      </div>
-    
-      <button type="submit" class="btn btn-primary mb-2 ps-5 pe-5">Mandami un botto di spam</button>
-    </form>
-    
-    <a href="#!" class="btn btn-primary" id="non_cliccare" style="color: #1A0933; background-color:#1A0933;">Mandami un botto di spam</a>
-  </footer>
-
-  <script>
-    $("#optionsRadios1").click(function(){
-      $("#risposta_canigatti").text("Risposta giusta");
-    })
-  </script>
-
-  <script src="compleanno.js"></script>
-</body>
-</html>
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 35px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #3BF182;
+    color: #1A0A34;
+  }
